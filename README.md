@@ -12,10 +12,6 @@
 
 ## Project Overview
 
-- [Contests Tables](#contests-tables)
-- [Saving Contest](#saving-contest) 
-
-
 ### Contests Tables 
 ![User adding an item to cart](./images/adding.gif)
 > Tables are populated through a get request to the Kontests API.
