@@ -42,6 +42,8 @@ app.use(express.json());
 app.use(cors());
 app.use((req, res, next) => {
   console.log(`URL: ${req.url}, METHOD: ${req.method}`);
+  console.log('BODY',req.body);
+  
   console.log(contests, "\n");
   next();
 });

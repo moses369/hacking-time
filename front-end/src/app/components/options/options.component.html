@@ -1,7 +1,7 @@
 <div class="options" >
   <select
   
-    class="form-select sites"
+    class="form-select sites fs-6 text-bg-dark"
     style="width: auto"
     name="sites"
     id="sites"
@@ -14,7 +14,7 @@
     </option>
   </select>
   <a
-  class="text-decoration-none "
+  class="  text-decoration-none fs-2 "
     [routerLink]="hasRouter('/') ? '/saved' : '/'"
     (click)="getSiteContests()"
     >{{ hasRouter("/") ? "View Saved" : "View All" }}</a

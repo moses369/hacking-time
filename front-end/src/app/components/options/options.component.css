@@ -4,11 +4,10 @@
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    
-    position: fixed;
-    top: 45%;
-    padding-top: 5;
+    align-self: center;
+
 }
+
 
 .sites{
     margin-bottom: 2rem;

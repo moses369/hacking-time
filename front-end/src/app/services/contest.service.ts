@@ -40,6 +40,7 @@ export class ContestService {
    * @returns nothing
    */
   refreshContests(site: string = 'all'): void {
+    
     //Prevents us from making multiple API calls with multiple subscribers
     // We render two different tables, only one API call between them
     this.http
@@ -53,7 +54,7 @@ export class ContestService {
             contest.start_time = new Date(contest.start_time);
             contest.end_time = new Date(contest.end_time);
             contest.duration = parseInt(contest.duration as string);
-
+            !contest.site && (contest.site = site) 
             //Check if it is in our saved contests array
               for (let c of this.savedContests) {
                 //If we find a saved contests
