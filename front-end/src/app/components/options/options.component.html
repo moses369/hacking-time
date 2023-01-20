@@ -1,0 +1,22 @@
+<div class="options" >
+  <select
+  
+    class="form-select sites"
+    style="width: auto"
+    name="sites"
+    id="sites"
+    [(ngModel)]="currSite"
+    (ngModelChange)="getSiteContests()"
+  >
+    <option [ngValue]="'all'">All</option>
+    <option *ngFor="let site of sites" [ngValue]="site.toLowerCase()">
+      {{ site.replace("_", " ").toUpperCase() }}
+    </option>
+  </select>
+  <a
+  class="text-decoration-none "
+    [routerLink]="hasRouter('/') ? '/saved' : '/'"
+    (click)="getSiteContests()"
+    >{{ hasRouter("/") ? "View Saved" : "View All" }}</a
+  >
+</div>

@@ -1,0 +1,64 @@
+<div class="container-fluid p-5">
+  <!-- Display table -->
+  <h2>
+    {{ type === "upcoming" ? "Upcoming Contests" : "Ongoing Contests" }}
+  </h2>
+  <!-- If no contests is found -->
+  <h2 *ngIf="contestsDisplay.length === 0" class="text-center">
+    No Contests Found
+  </h2>
+  <div *ngIf="contestsDisplay.length > 0" class="table-responsive">
+    <table class="table table-striped">
+      <!-- Table Head -->
+      <thead>
+        <tr>
+          <th scope="col">Save</th>
+          <th scope="col" (sort)="onSort($event)" sortable="name">Name</th>
+          <th scope="col" (sort)="onSort($event)" sortable="start_time">
+            Start Date
+          </th>
+          <th scope="col" (sort)="onSort($event)" sortable="end_time">
+            End Date
+          </th>
+          <th scope="col" (sort)="onSort($event)" sortable="duration">
+            Duration
+          </th>
+          <th scope="col" (sort)="onSort($event)" sortable="site">Site</th>
+        </tr>
+      </thead>
+      <!-- Table Body -->
+      <tbody>
+        <!-- Contest Item Component -->
+        <tr
+          contest-item
+          *ngFor="let contest of contestsDisplay"
+          [contest]="contest"
+          (onToggleSave)="toggleSave($event)"
+        ></tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Pagination -->
+  <div *ngIf="contestsDisplay.length > 0" class="d-flex justify-content-between p-2">
+    <ngb-pagination
+      [collectionSize]="collectionSize"
+      [(page)]="page"
+      [pageSize]="pageSize"
+      (pageChange)="refreshTable()"
+    >
+    </ngb-pagination>
+
+    <select
+      class="form-select"
+      style="width: auto"
+      [(ngModel)]="pageSize"
+      (ngModelChange)="refreshTable()"
+    >
+      <option [ngValue]="5">5 items per page</option>
+      <option [ngValue]="10">10 items per page</option>
+      <option [ngValue]="15">15 items per page</option>
+      <option [ngValue]="collectionSize">All items</option>
+    </select>
+  </div>
+  <!-- END Pagination -->
+</div>

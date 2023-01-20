@@ -1,0 +1,32 @@
+export const CHALLENGES = [
+  {
+    name: 'Abakoda Long Contest 2022',
+    url: 'https://codeforces.com/gymRegistration/104146',
+    start_time: '2023-01-19T02:30:00.000Z',
+    end_time: '2023-01-28T08:30:00.000Z',
+    duration: '799200',
+    site: 'CodeForces::Gym',
+    in_24_hours: 'Yes',
+    status: 'CODING',
+  },
+  {
+    name: 'Netcore Backend Developer Hiring Challenge 2023 - Round 1',
+    url: 'https://www.hackerearth.com/challenges/hiring/netcore-backend-developer-hiring-challenge-2023-round-1/',
+    start_time: '2023-01-20T12:30:00.000Z',
+    end_time: '2023-01-29T18:25:00.000Z',
+    duration: '798900.0',
+    site: 'HackerEarth',
+    in_24_hours: 'Yes',
+    status: 'BEFORE',
+  },
+  {
+    name: "January Circuits '23",
+    url: 'https://www.hackerearth.com/challenges/competitive/january-circuits-23/',
+    start_time: '2023-01-20T16:00:00.000Z',
+    end_time: '2023-01-27T16:00:00.000Z',
+    duration: '604800.0',
+    site: 'HackerEarth',
+    in_24_hours: 'Yes',
+    status: 'BEFORE',
+  },
+];

@@ -1,0 +1,14 @@
+<td>
+  <button (click)="onToggle()" class="border-0" >
+    <fa-icon
+      [icon]="contest.saved  ? faSaved : faNotSaved"
+    ></fa-icon>
+  </button>
+</td>
+<td>
+  <a href="{{ contest.url }}">{{ contest.name }}</a>
+</td>
+<td>{{ contest.start_time | date : "shortDate" }}</td>
+<td>{{ contest.end_time | date : "shortDate" }}</td>
+<td>{{ contest.duration | formatTime }}</td>
+<td>{{ contest.site }}</td>
