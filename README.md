@@ -13,13 +13,17 @@
 ## Project Overview
 
 ### Contests Tables 
-![User adding an item to cart](./images/adding.gif)
+![Default Tables](./home.png)
 > Tables are populated through a get request to the Kontests API.
 
 > Utilized bootstrap to create the pagination and sortable funcionality of the tables 
 
+![Default Tables](./site_filter.png)
+
+> Able to filter tables based off chosen site 
+
 ### Saving Contest
-![User changing item quanity](./images/price.gif)
+![User changing item quanity](./saved.png)
 > Contest can be saved by clicking the save icon and should populate on the saved tables when switching routes
 
 
