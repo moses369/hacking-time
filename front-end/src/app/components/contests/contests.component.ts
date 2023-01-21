@@ -127,3 +127,17 @@ export class ContestsComponent implements OnInit {
       }
   }
 }
+
+
+/*
+ ## contests.componenet
+- Renders the contest table and its pagination 
+ - Uses a subscription to listen to the contest.service Subject (sends a get requests to the KnotestAPI and returns a Subject) when on the main page 
+- When on the '/saved' page utilizes the 'saved-contest.service' to retrieve saved contests instead of pinging the KontestAPI
+- Input - type from 'tables.component' used to devide if the table will display ongoing, or upcoming contests.
+- the 'th' use the sortable directive, based off bootstrap's documentation 
+- utilizes bootstrap's pagination module to set up the pagination
+- stores the toggleSave function passed to 'contest-item.component' to toggle saved contest
+
+
+*/
