@@ -16,8 +16,8 @@
 - `ng new front-end`
 - `ng serve`
 - `ng generate component components/[component name]`
-- `ng generate pipe pipes/[pipe name]
-- `ng generate service services/[service naem]
+- `ng generate pipe pipes/[pipe name]`
+- `ng generate service services/[service naem]`
 - `ng generate directive directives/[directive name]`
 - `ng add [bootstrap/fortawesome]`
 - `ng build`
