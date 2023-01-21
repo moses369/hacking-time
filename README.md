@@ -12,6 +12,18 @@
 ## About
  Angular application, used to find upcoming and ongoing coding contest from sites partnered with [Kontest API](https://kontests.net/api). 
 
+## CLI Commands used
+- `ng new front-end`
+- `ng serve`
+- `ng generate component components/[component name]`
+- `ng generate pipe pipes/[pipe name]
+- `ng generate service services/[service naem]
+- `ng generate directive directives/[directive name]`
+- `ng add [bootstrap/fortawesome]`
+- `ng build`
+
+
+
 ## Project Overview
 
 ### Contests Tables 
@@ -54,6 +66,7 @@
 
 ### tables.component 
 - Renders the `contest.component`, only added to have a component to mount on the routes for the Router
+
 
 
 
