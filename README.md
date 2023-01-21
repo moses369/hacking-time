@@ -50,10 +50,10 @@
  ### options.component 
 - Renders the site filter options and the link to switch saved and home views
 - Utilizes the `site.service` to send a get request to the Kontest API and retrieve the available site options to filter the tables by
-- filters the table by using the contest.service to refresh the contests by sending a get request only returning the selected sites contests
+- filters the table by using the `contest.service` to refresh the contests by sending a get request only returning the selected sites contests
 
 ### tables.component 
-- Renders the contest.component, only added to have a component to mount on the routes for the Router
+- Renders the `contest.component`, only added to have a component to mount on the routes for the Router
 
 
 
