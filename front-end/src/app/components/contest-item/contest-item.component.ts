@@ -26,3 +26,10 @@ export class ContestItemComponent implements OnInit {
     this.onToggleSave.emit(this.contest);
   }
 }
+
+/* 
+  ## contest-item
+  - Renders the 'td' for each contest
+  - Inputs - ('contest' from 'contests.component') the contest object to display 
+  - Outputs - ('onToggle' to 'contests.componenet') allows the us to toggle the saved property of the contest
+*/
