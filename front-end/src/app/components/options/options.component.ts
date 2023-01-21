@@ -31,3 +31,9 @@ export class OptionsComponent implements OnInit {
     return this.router.url === route
   }
 }
+/* 
+ ## options.component 
+- Renders the site filter options and the link to switch saved and home views
+- Utilizes the 'site.service' to send a get request to the Kontest API and retrieve the available site options to filter the tables by
+- filters the table by using the contest.service to refresh the contests abd send a get request only returning the selected sites contests
+*/
