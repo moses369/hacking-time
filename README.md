@@ -49,7 +49,7 @@
   - Inputs - (`contest` from `contests.component`) the contest object to display 
   - Outputs - (`onToggle` to `contests.componenet`) allows the us to toggle the saved property of the contest
 
- ### contests.componenet
+ ### contests.component
 - Renders the contest table and its pagination 
  - Uses a subscription to listen to the contest.service Subject (sends a get requests to the KnotestAPI and returns a Subject) when on the main page 
 - When on the `/saved` page utilizes the `saved-contest.service` to retrieve saved contests instead of pinging the KontestAPI
